@@ -1,0 +1,7 @@
+build/
+*.o
+*.elf
+*.bin
+.qemu.log
+.DS_Store
+compile_commands.json
