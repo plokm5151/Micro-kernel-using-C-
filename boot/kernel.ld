@@ -5,4 +5,8 @@ SECTIONS {
   .rodata : { *(.rodata*) }
   .data : { *(.data*) }
   .bss : { *(.bss*) *(COMMON) }
+
+  . = ALIGN(16);
+  . += 0x4000;      /* 16KB stack */
+  _stack_top = .;
 }
